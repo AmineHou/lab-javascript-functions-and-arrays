@@ -89,6 +89,14 @@ function uniquifyArray(unqArr) {
 
   if (unqArr.length === 0) return null;
 
+  let newArr = [];
+
+  for (let i = 0; i < unqArr.length; i++) {
+    if (!newArr.includes(unqArr[i])) {
+      newArr.push(unqArr[i]);
+    }
+  }
+  return newArr;
 }
 
 
